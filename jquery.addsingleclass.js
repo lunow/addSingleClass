@@ -8,7 +8,7 @@
 		};
 		var opts = jQuery.extend(defaults, options);		
 		return this.each(function() {
-			$(this).siblings().removeClass(opts.activeClass).end().addClass('active');
+			$(this).siblings().removeClass(opts.activeClass).end().addClass(opts.activeClass);
 		});
 	};
 })(jQuery);
